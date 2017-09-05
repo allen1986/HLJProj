@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>HLJProj</display-name>
+	<welcome-file-list>
+		<welcome-file>/index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>FileUpload</servlet-name>
+		<servlet-class>com.hlj.servlet.FileUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileUpload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FileDownload</servlet-name>
+		<servlet-class>com.hlj.servlet.FileDownloadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileDownload</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FileList</servlet-name>
+		<servlet-class>com.hlj.servlet.FileListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileList</servlet-name>
+		<url-pattern>/filelist</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UploadProgress</servlet-name>
+		<servlet-class>com.hlj.servlet.UploadProgressServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadProgress</servlet-name>
+		<url-pattern>/progress</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FileDelete</servlet-name>
+		<servlet-class>com.hlj.servlet.FileDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileDelete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+</web-app>
